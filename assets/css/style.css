@@ -1,12 +1,43 @@
 
-h1{color:red;
+h1{text-align:center;
+    color:white; 
 
+}
+.jumbotron{
+background:tomato;
+margin-left:25px;
+margin-right:25px;
 }
 #crystals{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
+    border: solid, 3px, white;
 }
 img{
     width:100%;
+}
+p{text-align:center;
+color:white;}
+body{background-image: url("../images/white-waves.png")}
+
+footer{position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid tomato;
+    color: #ffffff;
+    background-color:#666666;
+    text-align: center;
+margin-top:-50px;}
+
+
+nav{width:99%;
+    padding:25px;
+    background-color:#ffffff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align:right;
+padding-left:0px;
+border-bottom:solid #cccccc 5px;
+color:#777777;
 }
