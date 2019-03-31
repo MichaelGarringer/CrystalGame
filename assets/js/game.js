@@ -1,13 +1,15 @@
 var wins = 0;
+$("#wins").html(wins)
 var losses = 0;
+$("#losses").html(losses)
 var targetNumber
 var playerCount
 
 var crystals =
-    ["http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg",
-        "http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg",
-        "http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg",
-        "http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg"
+    ["assets/images/crystals.jpg",
+        "assets/images/crystals.jpg",
+        "assets/images/crystals.jpg",
+        "assets/images/crystals.jpg"
     ]
 
 function start() {
@@ -40,14 +42,14 @@ $(document).on("click", ".crystal", function () {
 
     if (playerCount === targetNumber) {
         wins++;
-        alert("you Win ");
+        alert("You win!");
         $("#wins").html(wins)
         start();
 
     }
     if (playerCount > targetNumber) {
         losses++;
-        alert("You lose")
+        alert("You lose!")
         $("#losses").html(losses)
         start();
     }
